@@ -1,0 +1,24 @@
+site_name: 苏小樱的文档
+site_author: Sokyoei
+copyright: Sokyoei © 2024
+
+nav:
+  - home: index.md
+  - Git: Git.md
+  - tcp/ip: TCPIP.md
+  - VMWare: VMware.md
+  - Kafka: Kafka/index.md
+  - Windows: Windows/index.md
+  - Docker: Docker/index.md
+  - Linux: Linux/index.md
+  - MariaDB: MariaDB/index.md
+  - nginx: nginx/index.md
+  - Redis: Redis/index.md
+
+theme:
+  name: material
+  locale: zh
+
+plugins:
+  - search
+#  - monorepo
