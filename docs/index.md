@@ -1,4 +1,4 @@
-# 苏小樱的文档
+# 蘇小櫻 Sokyōei
 
 - [MariaDB/MySQL](MariaDB/index.md)
 - [nginx](nginx/index.md)

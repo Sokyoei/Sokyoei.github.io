@@ -1,6 +1,7 @@
-site_name: 苏小樱的文档
+site_name: 蘇小櫻 Sokyōei
 site_author: Sokyoei
-copyright: Sokyoei © 2024
+copyright: Sokyoei &copy 2024
+repo_url: https://github.com/Sokyoei/Sokyoei.github.io
 
 nav:
   - home: index.md
@@ -17,8 +18,31 @@ nav:
 
 theme:
   name: material
-  locale: zh
+  language: zh
+  logo: images/Popstar Ahri-512x512.jpg
+  favicon: images/favicon_32x32.ico
+  features:
+    - navigation.top
+    - search.suggest
+    - toc.integrate
+  palette:
+    primary: pink
+    accent: purple
 
 plugins:
   - search
-#  - monorepo
+  #  - monorepo
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - def_list
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
