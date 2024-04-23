@@ -4,5 +4,9 @@
         "allowed_elements": [
             "br"
         ]
-    }
+    },
+    "MD024": {
+        "siblings_only": true
+    },
+    "MD046": false
 }
