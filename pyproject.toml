@@ -3,19 +3,13 @@ name = "sokyoei-github-io"
 version = "0.1.0"
 description = "Add your description here"
 authors = [{ name = "Sokyoei", email = "89757286+Sokyoei@users.noreply.github.com" }]
-dependencies = [
-    "mkdocs-material[imaging]>=9.5.17",
-]
+dependencies = ["mkdocs-material[imaging]>=9.5.17"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.rye]
-managed = true
-dev-dependencies = []
 
 [tool.hatch.metadata]
 allow-direct-references = true
