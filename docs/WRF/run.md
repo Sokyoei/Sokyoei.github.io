@@ -152,7 +152,7 @@ ln -fs $DATA_DIR/ob/2008020512/gdas1.t12z.prepbufr.nr ob.bufr
 # 链接第一次猜测文件
 ln -sf $DATA_DIR/rc/2008020512/wrfinput_d01 ./fg
 # 复制 namelist.input
-cp $DATA_DIR/namelist.input.3dvar namelist.inpb ut
+cp $DATA_DIR/namelist.input.3dvar namelist.input
 
 ulimit -s unlimited
 mpirun -np 16 ./da_wrfvar.exe

@@ -118,3 +118,31 @@ gfs 数据集有问题，更换其他天数的数据集
 ### 解决方法
 
 暂无，使用多台机器并行
+
+## 7. real.exe the domain size is too small for this many processors, or the decomposition aspect ratio is poor
+
+```log
+  Domain # 1: dx = 10000.000 m
+   For domain            1 , the domain size is too small for this many processors, or the decomposition aspect ratio is poor.
+   Minimum decomposed computational patch size, either x-dir or y-dir, is 10 grid cells.
+  e_we =    43, nproc_x =    4, with cell width in x-direction =   10
+  e_sn =    47, nproc_y =    8, with cell width in y-direction =    5
+  --- ERROR: Reduce the MPI rank count, or redistribute the tasks.
+-------------- FATAL CALLED ---------------
+FATAL CALLED FROM FILE:  <stdin>  LINE:    2797
+NOTE:       1 namelist settings are wrong. Please check and reset these options
+-------------------------------------------
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source
+
+Stack trace terminated abnormally.
+```
+
+## 解决方法
+
+修改 mpirun 的 cpu 核心数，使 e_we(e_sn)/nproc_x(nproc_y) > 10
+
+参考：
+
+- [Choosing an Appropriate Number of Processors](https://forum.mmm.ucar.edu/threads/choosing-an-appropriate-number-of-processors.5082/)

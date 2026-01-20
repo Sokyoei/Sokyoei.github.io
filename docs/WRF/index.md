@@ -68,6 +68,8 @@ WRF 各文件夹结构
 wrfout 文件采用 Arakawa C-grid(荒川 C 网格) ，UV
 分别在经纬维度上比正常多一维。[see also](https://amps-backup.ucar.edu/information/configuration/wrf_grid_structure.html)
 
+[WRF Output Fields](https://zhuanlan.zhihu.com/p/517670905)
+
 ---
 背景场：background，是利用物理公式计算后的一个大气状态结果<br>
 观测场：observation，是利用探测器和观测站测得的大气状态结果<br>
@@ -105,3 +107,9 @@ bufr file: 观测场<br>
 | spd        | wind speed              | 风速             |
 | dw         | doppler lidar winds     | 多普勒激光雷达风 |
 | sst        | sea-surface temperature | 海洋表面温度     |
+
+## Utils 工具
+
+- [netCDF software](https://www.unidata.ucar.edu/software/netcdf/software.html)
+- [Panoply](https://www.giss.nasa.gov/tools/panoply/): netCDF, HDF and GRIB Data Viewer
+- [VAPOR](https://www.vapor.ucar.edu/)
