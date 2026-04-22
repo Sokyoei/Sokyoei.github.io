@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* :root>* { */
+    /* code theme */
+    /* --md-code-hl-number-color: #B8D7A3; */
+    /* --md-code-hl-special-color: #BEB7FF; */
+    /* --md-code-hl-function-color: #DCDCAA; */
+    /* --md-code-hl-constant-color: #4FC1FF; */
+    /* --md-code-hl-keyword-color: #569CD6; */
+    /* --md-code-hl-string-color: #CE9178; */
+    /* --md-code-hl-name-color: #4EC9B0; */
+    /* --md-code-hl-operator-color: #fff; */
+    /* --md-code-hl-punctuation-color: #fff; */
+    /* --md-code-hl-comment-color: #6A9955; */
+    /* --md-code-hl-generic-color: #4EC9B0; */
+    /* --md-code-hl-variable-color: #9CDCFE; */
+    /* code theme background */
+    /* --md-code-fg-color: black; */
+    /* --md-code-bg-color: rgba(255, 255, 255, 0.7); */
+    /* --md-code-hl-color: #852323; */
+/* } */
+
+body {
+    margin: 0;
+    padding: 0;
+    background:
+        linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)),
+        url("../images/Popstar Ahri.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+[data-md-color-scheme="sokyoei"] {
+    --md-primary-fg-color: pink;
+    --md-primary-fg-color--light: pink;
+    --md-primary-fg-color--dark: purple;
+}
